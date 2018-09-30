@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Effective JavaScript: Frogger</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="Status.preloader()">
+    <div class="loader">
+
+        <div class="card">
+            <p>Are you ?</p>
+            <img src="images/char-boy.png" alt="boy char" onclick="Status.gender('male')">
+            <img src="images/char-cat-girl.png" alt="girl char" onclick="Status.gender('female')">
+            <img src="images/lgbt.png" alt="LGBTQ" onclick="Status.gender('lgbt')">
+        </div>
+    </div>    
+        
+        <h1>Arcade Game</h1>
+        <p class="level">Level:1</p>
+        <p class="score">Score:0</p>
+        <div class="lives"><img src="images/Heart.png"><img src="images/Heart.png"><img src="images/Heart.png"></div>
+        
+        
+        <div class="instruction"> 
+            <p>Instructions</p>
+            <p>Scoring</p>
+            <p>Game Play</p>
+            <ul >
+               <li>Level-1:1000</li>
+                <li>Level-2:1500</li>
+                  <li>Level-3:2000</li> 
+                  <li>Level-4:2500</li> 
+                  <li>Winner:3000</li>   
+                  <li>Looser:❤️=0</li>   
+            </ul>
+            <ul >
+               <li style="color: transparent; text-shadow: 0 0 #f70; ">💎 50+</li>
+                <li style="color: transparent; text-shadow: 0 0 #22f; ">💎 100+</li>
+                  <li style="color: transparent; text-shadow: 0 0 #0f0; ">💎 200+</li> 
+                  <li>🗝️ 300+</li> 
+                   <li>🌊 500+</li>   
+                  <li>⛰️Hits back🐞</li> 
+                  
+            </ul>
+            <ul >
+               <li>󠁡󠁡󠁡󠁡W/🔼/8️:Up</li>
+                <li>S/🔽/2:Down</li>
+                  <li>A/◀️/4:Left</li> 
+                  <li>D/▶️/6:Right</li>
+                  <li>On levelUP +2❤️</li>      
+            </ul>
+        </div>
+        
+        <script src="js/resources.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/engine.js"></script>
+</body>
+
+</html>
